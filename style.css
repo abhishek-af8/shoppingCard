@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body{
+    font-family: "Afacad Flux", sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #05162b;
+    min-height: 94.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #122b41;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 20px 25px 15px #0000000d, 0px 40px 30px 15px #0000001a;
+    width: 300px;
+    max-width: 90%;
+}
+
+.grid-container{
+    display:grid;
+    gap: 7px;
+    border-radius: 3px;
+    padding: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 275px auto auto;
+}
+
+.box{
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.b1{
+    background-color: #909090;
+    border-radius: 10px;
+    grid-column: 1/5;
+    margin-bottom: 0;
+}
+
+
+.b2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4px 7px 4px;
+    border-radius: 0px;
+    border-bottom: 1px solid #5677a0;
+    background-color: transparent;
+}
+
+.title{
+    text-align: left;
+    color: #ddd;
+    line-height: .4;
+}
+.title h3{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+.title p{
+    font-size: 18px;
+    color: #5677a0;
+}
+
+.price{
+    text-align: center;
+    font-weight: bold;
+    padding-right: 5px;
+    font-size: 16px;
+    line-height: 0.2;
+}
+.price .org{
+    color: #5677a0;
+    text-decoration: line-through;
+}
+.price .disc{
+    color: #00acce;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+
+.b3{
+    margin-top: 12px;
+    grid-column: 3/5;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 7px;
+}
+
+.b4{
+    margin-top: 12px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 7px;
+}
+
+.b5{
+    margin-top: 12px;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 7px;
+}
+
+
+img{
+    max-height: 100%;
+    max-width: 80%;
+    transition: 0.5s;
+}
+img:hover{
+    scale: 1.08;
+}
+
+
+.cart{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid #89ed96;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.cart i{
+    color: #89ed96;
+    font-size: 20px;
+}
+.cart i:hover{
+    color: #00b518;
+}
+.cart i:active{
+    color: #00b518;
+}
+.cart:active{
+    transform: scale(0.90);
+}
+
+
+.wish{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid pink;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.wish i{
+    color: pink;
+    font-size: 24px;
+}
+.wish i:hover{
+    color: #ff5672;
+}
+.wish i:active{
+    color: #ff5672;
+}
+.wish:active{
+    transform: scale(0.90);
+}
+
+
+.buy{
+    background-image: linear-gradient(to right, #073b5c 2%, #26a0da  51%, #05304a  100%);
+    transition: 0.3s;
+    background-size: 200% auto;
+    padding: 15px 25px ;
+    border: none;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.buy:hover{
+    border: 1px solid #ddd;
+    background-position: right center;
+}
+.buy:active{
+    transform: scale(0.95);
+    background-position: right center;
+}
